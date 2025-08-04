@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+'''A command-line utility that lets you interact
+ with this Django project in various ways
+ 
+ py manage.py runserver: runs the local server
+ 
+ '''
 import os
 import sys
 

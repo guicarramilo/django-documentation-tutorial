@@ -1,0 +1,1 @@
+## This is our app. to create it, we run the following command line: py manage.py startapp app-name, in this case the app-name is polls.
