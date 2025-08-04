@@ -29,15 +29,23 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+#Holds the names of all Django applications that are activated in this Django instance.
+
+#Apps can be used in multiple projects, 
+# and you can package and distribute them for use by others in their projects.
+
+'''Some of these applications make use of at least one database table, 
+though, so we need to create the tables in the database before we can use them. 
+To do that, run the following command:  py manage.py migrate'''
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'polls.apps.PollsConfig',
+    'django.contrib.admin', #The admin site.
+    'django.contrib.auth', #An authentication system.
+    'django.contrib.contenttypes', #A framework for content types.
+    'django.contrib.sessions', #A session framework.
+    'django.contrib.messages', #A messaging framework.
+    'django.contrib.staticfiles',#A framework for managing static files.
+    'polls.apps.PollsConfig',#Our App config
 ]
 
 MIDDLEWARE = [
